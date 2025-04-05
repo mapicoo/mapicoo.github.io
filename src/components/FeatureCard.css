@@ -1,0 +1,51 @@
+.document-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.document-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  color: #2E86AB;
+}
+
+.document-content {
+  flex-grow: 1;
+}
+
+.document-title {
+  color: #2D2D2A;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.document-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .document-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  
+  .document-icon {
+    margin-bottom: 0.5rem;
+  }
+}

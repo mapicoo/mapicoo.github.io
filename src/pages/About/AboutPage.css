@@ -1,0 +1,58 @@
+.about-page {
+    padding-top: 80px;
+  }
+  
+  .about-hero {
+    background: linear-gradient(135deg, #2E86AB 0%, #2E86AB 100%);
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-hero .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  .documentation-preview {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #F7F7F2;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #F18F01;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #d97d00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero {
+      padding: 3rem 0;
+    }
+    
+    .about-hero h1 {
+      font-size: 2rem;
+    }
+    
+    .documentation-preview {
+      padding: 3rem 0;
+    }
+  }
