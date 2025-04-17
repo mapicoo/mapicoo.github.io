@@ -31,7 +31,6 @@ const ContactPage: React.FC = () => {
         subtitle="Bize ulaşın ve proje hakkında bilgi alın " 
         background="team"
       />
-
       <section className="contact-content">
         <div className="container">
           <div className="contact-grid">
@@ -40,7 +39,7 @@ const ContactPage: React.FC = () => {
               
               <div className="info-item">
                 <h3>Adres</h3>
-                <p>Üniversite Mahallesi, Teknoloji Caddesi No:123, İstanbul</p>
+                <p>Üniversite Mahallesi, Teknoloji Caddesi No:123, Kadıköy/İstanbul</p>
               </div>
               
               <div className="info-item">
