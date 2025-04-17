@@ -25,21 +25,20 @@ Web uygulaması, kullanıcıların etkileşimli bir şekilde yerel oyun deneyiml
 
 ### Başlangıç
 
-Projenin bu şubesini kendi bilgisayarınızda çalıştırmak için şu adımları takip edin:
+Projeyi kendi bilgisayarınızda çalıştırmak için şu adımları takip edin:
 
 1. **Projeyi İndirin veya Klonlayın:**
    ```bash
    git clone https://github.com/mapicoo/mapicoo.github.io.git
-Gerekli Bağımlılıkları Yükleyin:
 
-bash
-Kopyala
-npm install
-Uygulamayı Başlatın:
+2. **Gerekli Bağımlılıkları Yükleyin:**
+   ```bash
+   npm install
 
-bash
-Kopyala
-npm start
+3. **Uygulamayı Başlatın:**
+   ```bash
+   npm start
+   
 Uygulama, http://localhost:3000 adresinden çalışacaktır.
 
 Uygulama Özellikleri
@@ -48,29 +47,3 @@ Yerel Kültürler ve Oyunlar: Kullanıcılar, oyunlar üzerinden yerel kültürl
 Etkileşimli AR Deneyimi: Gerçek dünya ile etkileşim sağlayarak, sanal nesnelerle oyun oynanır.
 
 Yerel Temalar: Her oyun, yöresel öğelerle özelleştirilmiş içerikler sunar.
-
-Katkı Sağlama
-Bu projeye katkıda bulunmak isterseniz:
-
-Fork'layın
-
-Yeni bir branch oluşturun
-
-Değişikliklerinizi yapın ve commit edin
-
-Pull request gönderin
-
-Lisans
-Bu proje MIT Lisansı altında lisanslanmıştır.
-
-markdown
-Kopyala
-
----
-
-### Açıklama:
-
-1. **Başlıklar ve Alt Başlıklar**: Markdown başlıkları (`#`, `##`) ile proje detaylarını ve önemli başlıkları vurguladım. Bu sayede okunabilirlik artar ve içerik daha düzenli olur.
-2. **Kod Örnekleri**: Proje kurulum ve çalışma komutları, doğru bir şekilde formatlanarak net bir şekilde açıklanmıştır.
-3. **Kısa Açıklamalar**: Uygulamanın temel özellikleri ve kurulum adımları kısa ve öz bir şekilde sunulmuştur.
-4. **Liste Kullanımı**: Projenin özellikleri, altyapısı gibi kısımlar madde madde sıralanarak anlaşılır hale getirilmiştir.
