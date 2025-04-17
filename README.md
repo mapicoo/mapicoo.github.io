@@ -13,7 +13,7 @@ Web uygulaması, kullanıcıların etkileşimli bir şekilde yerel oyun deneyiml
 - **CSS ve HTML**: Web sayfalarının görsel tasarımında, stil ve yapılandırma için kullanılmıştır.
 
 ---
-##Proje Özellikleri:
+## Proje Özellikleri:
 **Kültürel Keşif:** Kullanıcılar, yerel kültürleri keşfetmek için sanal oyunları oynayarak, o kültürlere ait semboller, müzikler ve yemekler hakkında bilgi edinir.
 
 **Etkileşimli Oyunlar:** Oyunlar, yerel kültürel öğeleri içeren temalarla tasarlanmıştır. Oyuncular balon patlatma, yemek yapma veya nesne toplama gibi oyunlarda yerel ögelerle etkileşimde bulunurlar.
