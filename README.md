@@ -1,48 +1,76 @@
-Mapico Web Uygulaması - Yerel Kültürleri Keşfedin
-Mapico Web Uygulaması, kullanıcıların yerel kültürleri keşfetmelerine olanak tanıyan etkileşimli ve eğitici bir platformdur. Artırılmış gerçeklik (AR) teknolojisiyle desteklenen bu platform, kullanıcıların yerel kültürleri, gelenekleri ve oyunları dijital ortamda deneyimlemelerini sağlar. Web üzerinden erişilebilen bu uygulama, kültürel etkileşimi teşvik ederken eğlenceli bir oyun deneyimi sunmaktadır.
+# Mapico Web Uygulaması
 
-Teknik Altyapı ve Kullanılan Teknolojiler:
-React.js: Uygulama, modern web uygulamaları için geliştirilmiş olan React.js ile oluşturulmuştur. Kullanıcı dostu arayüzler ve hızlı yanıt süreleri ile sağlam bir deneyim sunar.
+Mapico, artırılmış gerçeklik (AR) teknolojisini kullanarak kullanıcılarına yerel kültürleri ve gelenekleri keşfetme fırsatı sunan, etkileşimli ve yenilikçi bir **web uygulamasıdır**. Bu projede **React** kullanılarak geliştirilmiş, **TypeScript** ile güçlü tip kontrolü sağlanmıştır. **CSS** ve **HTML** ile stil ve yapılandırma sağlanmıştır.
 
-TypeScript: Tip güvenliği sağlayarak, kodun daha stabil ve hatasız çalışmasını sağlamak amacıyla tercih edilmiştir.
+Web uygulaması, kullanıcıların etkileşimli bir şekilde yerel oyun deneyimlerini ve kültürel öğeleri keşfetmelerine olanak tanır. **React**'in sağladığı bileşen tabanlı yapı ve **TypeScript**'in sağladığı tip güvenliği ile uygulama daha verimli ve hatasız bir şekilde geliştirilmiştir.
 
-HTML5, CSS3: Web sayfası görsel ve işlevsel bileşenlerini oluşturmak için HTML ve CSS teknolojileri kullanılmıştır.
+---
 
-Proje Özellikleri:
-Kültürel Keşif: Kullanıcılar, yerel kültürleri keşfetmek için sanal oyunları oynayarak, o kültürlere ait semboller, müzikler ve yemekler hakkında bilgi edinir.
+## Teknolojik Altyapı
 
-Etkileşimli Oyunlar: Oyunlar, yerel kültürel öğeleri içeren temalarla tasarlanmıştır. Oyuncular balon patlatma, yemek yapma veya nesne toplama gibi oyunlarda yerel ögelerle etkileşimde bulunurlar.
+- **React**: Kullanıcı arayüzü bileşenlerinin yönetilmesinde ve kullanıcı etkileşimlerinin kontrolünde kullanılmıştır.
+- **TypeScript**: Tip güvenliği sağlayarak, kodun daha stabil ve hatasız çalışmasını sağlamak amacıyla tercih edilmiştir.
+- **CSS ve HTML**: Web sayfalarının görsel tasarımında, stil ve yapılandırma için kullanılmıştır.
 
-Mobil ve Web Uyumlu: Uygulama hem mobil hem de masaüstü platformlarında sorunsuz çalışacak şekilde tasarlanmıştır. Web uygulaması, kullanıcıların masaüstü cihazlarında kolayca erişebileceği şekilde optimize edilmiştir.
+---
 
-Proje Yapısı:
-Create React App ile Başlatma: Proje, React uygulaması oluşturmak için Create React App kullanılarak başlatılmıştır. Bu araç, React ile hızlı bir başlangıç yapmanıza olanak tanır.
+## Kullanıcı Deneyimi
 
-Komutlar ve Başlangıç: Projenizi geliştirmek için aşağıdaki komutları kullanabilirsiniz:
+- Kullanıcılar, gerçek dünya ortamlarıyla etkileşim kurarak yerel kültürel öğeleri keşfeder.
+- İnteraktif bir deneyimle, yerel yemekler, oyunlar ve diğer geleneksel öğeler sanal ortamda sunulur.
 
-npm start: Geliştirme modunda uygulamayı çalıştırır ve http://localhost:3000 üzerinden erişilebilir hale getirir.
+---
 
-npm run build: Uygulamayı üretim için optimize eder ve "build" klasörüne derler.
+## Kurulum ve Çalıştırma
 
-npm test: Testlerinizi çalıştırmanızı sağlar.
+### Başlangıç
 
-npm run eject: Proje yapılandırmalarını kendi ihtiyacınıza göre özelleştirebilmeniz için projeyi "eject" eder, ancak bu işlem geri alınamaz.
+Projenin bu şubesini kendi bilgisayarınızda çalıştırmak için şu adımları takip edin:
 
-Nasıl Başlanır?
-Reponuzu bilgisayarınıza klonlayın:
+1. **Projeyi İndirin veya Klonlayın:**
+   ```bash
+   git clone https://github.com/mapicoo/mapicoo.github.io.git
+Gerekli Bağımlılıkları Yükleyin:
 
 bash
 Kopyala
-git clone https://github.com/Mapicoo/mapicoo.github.io.git
-Projeyi açın ve gerekli bağımlılıkları yükleyin:
-
-nginx
-Kopyala
 npm install
-Uygulamayı geliştirme modunda çalıştırmak için:
+Uygulamayı Başlatın:
 
-sql
+bash
 Kopyala
 npm start
-Sonuç:
-Mapico Web Uygulaması, artırılmış gerçeklik teknolojisini kullanarak yerel kültürlerin dijital ortamda canlandırılmasına olanak sağlar. Kullanıcılar, oyun oynarken geleneksel öğeleri keşfederek eğlenceli bir kültürel deneyim yaşarlar. Hem eğlenceli hem de öğretici bir platform olan Mapico, her yaştan kullanıcıya yönelik olarak tasarlanmıştır.
+Uygulama, http://localhost:3000 adresinden çalışacaktır.
+
+Uygulama Özellikleri
+Yerel Kültürler ve Oyunlar: Kullanıcılar, oyunlar üzerinden yerel kültürleri keşfeder.
+
+Etkileşimli AR Deneyimi: Gerçek dünya ile etkileşim sağlayarak, sanal nesnelerle oyun oynanır.
+
+Yerel Temalar: Her oyun, yöresel öğelerle özelleştirilmiş içerikler sunar.
+
+Katkı Sağlama
+Bu projeye katkıda bulunmak isterseniz:
+
+Fork'layın
+
+Yeni bir branch oluşturun
+
+Değişikliklerinizi yapın ve commit edin
+
+Pull request gönderin
+
+Lisans
+Bu proje MIT Lisansı altında lisanslanmıştır.
+
+markdown
+Kopyala
+
+---
+
+### Açıklama:
+
+1. **Başlıklar ve Alt Başlıklar**: Markdown başlıkları (`#`, `##`) ile proje detaylarını ve önemli başlıkları vurguladım. Bu sayede okunabilirlik artar ve içerik daha düzenli olur.
+2. **Kod Örnekleri**: Proje kurulum ve çalışma komutları, doğru bir şekilde formatlanarak net bir şekilde açıklanmıştır.
+3. **Kısa Açıklamalar**: Uygulamanın temel özellikleri ve kurulum adımları kısa ve öz bir şekilde sunulmuştur.
+4. **Liste Kullanımı**: Projenin özellikleri, altyapısı gibi kısımlar madde madde sıralanarak anlaşılır hale getirilmiştir.
