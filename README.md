@@ -14,11 +14,11 @@ Web uygulaması, kullanıcıların etkileşimli bir şekilde yerel oyun deneyiml
 
 ---
 ## Proje Özellikleri:
-**Kültürel Keşif:** Kullanıcılar, yerel kültürleri keşfetmek için sanal oyunları oynayarak, o kültürlere ait semboller, müzikler ve yemekler hakkında bilgi edinir.
+- **Kültürel Keşif:** Kullanıcılar, yerel kültürleri keşfetmek için sanal oyunları oynayarak, o kültürlere ait semboller, müzikler ve yemekler hakkında bilgi edinir.
 
-**Etkileşimli Oyunlar:** Oyunlar, yerel kültürel öğeleri içeren temalarla tasarlanmıştır. Oyuncular balon patlatma, yemek yapma veya nesne toplama gibi oyunlarda yerel ögelerle etkileşimde bulunurlar.
+- **Etkileşimli Oyunlar:** Oyunlar, yerel kültürel öğeleri içeren temalarla tasarlanmıştır. Oyuncular balon patlatma, yemek yapma veya nesne toplama gibi oyunlarda yerel ögelerle etkileşimde bulunurlar.
 
-**Mobil ve Web Uyumlu:** Uygulama hem mobil hem de masaüstü platformlarında sorunsuz çalışacak şekilde tasarlanmıştır. Web uygulaması, kullanıcıların masaüstü cihazlarında kolayca erişebileceği şekilde optimize edilmiştir.
+- **Mobil ve Web Uyumlu:** Uygulama hem mobil hem de masaüstü platformlarında sorunsuz çalışacak şekilde tasarlanmıştır. Web uygulaması, kullanıcıların masaüstü cihazlarında kolayca erişebileceği şekilde optimize edilmiştir.
 
 ## Kullanıcı Deneyimi
 
@@ -45,11 +45,4 @@ Projeyi kendi bilgisayarınızda çalıştırmak için şu adımları takip edin
    ```bash
    npm start
    
-Uygulama, http://localhost:3000 adresinden çalışacaktır.
-
-Uygulama Özellikleri
-Yerel Kültürler ve Oyunlar: Kullanıcılar, oyunlar üzerinden yerel kültürleri keşfeder.
-
-Etkileşimli AR Deneyimi: Gerçek dünya ile etkileşim sağlayarak, sanal nesnelerle oyun oynanır.
-
-Yerel Temalar: Her oyun, yöresel öğelerle özelleştirilmiş içerikler sunar.
+- **Uygulama**, http://localhost:3000 adresinden çalışacaktır.
