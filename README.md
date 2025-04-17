@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+Mapico Web Uygulaması - Yerel Kültürleri Keşfedin
+Mapico Web Uygulaması, kullanıcıların yerel kültürleri keşfetmelerine olanak tanıyan etkileşimli ve eğitici bir platformdur. Artırılmış gerçeklik (AR) teknolojisiyle desteklenen bu platform, kullanıcıların yerel kültürleri, gelenekleri ve oyunları dijital ortamda deneyimlemelerini sağlar. Web üzerinden erişilebilen bu uygulama, kültürel etkileşimi teşvik ederken eğlenceli bir oyun deneyimi sunmaktadır.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Teknik Altyapı ve Kullanılan Teknolojiler:
+React.js: Uygulama, modern web uygulamaları için geliştirilmiş olan React.js ile oluşturulmuştur. Kullanıcı dostu arayüzler ve hızlı yanıt süreleri ile sağlam bir deneyim sunar.
 
-## Available Scripts
+TypeScript: Tip güvenliği sağlayarak, kodun daha stabil ve hatasız çalışmasını sağlamak amacıyla tercih edilmiştir.
 
-In the project directory, you can run:
+HTML5, CSS3: Web sayfası görsel ve işlevsel bileşenlerini oluşturmak için HTML ve CSS teknolojileri kullanılmıştır.
 
-### `npm start`
+Proje Özellikleri:
+Kültürel Keşif: Kullanıcılar, yerel kültürleri keşfetmek için sanal oyunları oynayarak, o kültürlere ait semboller, müzikler ve yemekler hakkında bilgi edinir.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Etkileşimli Oyunlar: Oyunlar, yerel kültürel öğeleri içeren temalarla tasarlanmıştır. Oyuncular balon patlatma, yemek yapma veya nesne toplama gibi oyunlarda yerel ögelerle etkileşimde bulunurlar.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Mobil ve Web Uyumlu: Uygulama hem mobil hem de masaüstü platformlarında sorunsuz çalışacak şekilde tasarlanmıştır. Web uygulaması, kullanıcıların masaüstü cihazlarında kolayca erişebileceği şekilde optimize edilmiştir.
 
-### `npm test`
+Proje Yapısı:
+Create React App ile Başlatma: Proje, React uygulaması oluşturmak için Create React App kullanılarak başlatılmıştır. Bu araç, React ile hızlı bir başlangıç yapmanıza olanak tanır.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Komutlar ve Başlangıç: Projenizi geliştirmek için aşağıdaki komutları kullanabilirsiniz:
 
-### `npm run build`
+npm start: Geliştirme modunda uygulamayı çalıştırır ve http://localhost:3000 üzerinden erişilebilir hale getirir.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm run build: Uygulamayı üretim için optimize eder ve "build" klasörüne derler.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm test: Testlerinizi çalıştırmanızı sağlar.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm run eject: Proje yapılandırmalarını kendi ihtiyacınıza göre özelleştirebilmeniz için projeyi "eject" eder, ancak bu işlem geri alınamaz.
 
-### `npm run eject`
+Nasıl Başlanır?
+Reponuzu bilgisayarınıza klonlayın:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+bash
+Kopyala
+git clone https://github.com/Mapicoo/mapicoo.github.io.git
+Projeyi açın ve gerekli bağımlılıkları yükleyin:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+nginx
+Kopyala
+npm install
+Uygulamayı geliştirme modunda çalıştırmak için:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+sql
+Kopyala
+npm start
+Sonuç:
+Mapico Web Uygulaması, artırılmış gerçeklik teknolojisini kullanarak yerel kültürlerin dijital ortamda canlandırılmasına olanak sağlar. Kullanıcılar, oyun oynarken geleneksel öğeleri keşfederek eğlenceli bir kültürel deneyim yaşarlar. Hem eğlenceli hem de öğretici bir platform olan Mapico, her yaştan kullanıcıya yönelik olarak tasarlanmıştır.
