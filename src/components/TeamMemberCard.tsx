@@ -12,7 +12,13 @@ interface TeamMemberCardProps {
   role: string;
   responsibilities: string[];
   image: string;
-  socialLinks?: SocialLink[];
+  socialLinks: {
+    platform: string;
+    url: string;
+    icon: string;
+  }[];
+  index?: number;
+  isCenterCard?:boolean;
 }
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ 
