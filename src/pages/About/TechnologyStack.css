@@ -1,48 +1,182 @@
-.technology-section {
+/* TechnologyStack.css */
+/* Özel CSS değişkenleri ile izole edilmiş stil */
+.tech-stack-section {
+  --ts-primary: #2E86AB;
+  --ts-secondary: #3D5467;
+  --ts-light: #F7F7F2;
+  --ts-dark: #2D2D2A;
+  --ts-text: #4A4A48;
+  --ts-border: #E9ECEF;
+  --ts-card-bg: #FFFFFF;
+  --ts-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  padding: 6rem 0;
+  background-color: var(--ts-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-stack-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.tech-stack-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--ts-dark);
+  margin-bottom: 3rem;
+  position: relative;
+  font-weight: 700;
+}
+
+.tech-stack-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ts-primary), #4CC9F0);
+  border-radius: 2px;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tech-stack-card {
+  background: var(--ts-card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--ts-border);
+  box-shadow: var(--ts-shadow);
+}
+
+.tech-stack-icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.tech-stack-icon {
+  transition: transform 0.3s ease;
+}
+
+.tech-stack-name {
+  font-size: 1.25rem;
+  color: var(--ts-dark);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.tech-stack-purpose {
+  color: var(--ts-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.tech-stack-hover-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.tech-stack-card:hover .tech-stack-hover-bar {
+  transform: scaleX(1);
+}
+
+.tech-stack-card:hover .tech-stack-icon-container {
+  transform: scale(1.1);
+}
+
+/* Arka plan dekorasyonu */
+.tech-stack-section::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(67, 97, 238, 0.1) 0%, rgba(0,0,0,0) 70%);
+  z-index: 1;
+}
+
+.tech-stack-section::after {
+  content: '';
+  position: absolute;
+  bottom: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(76, 201, 240, 0.1) 0%, rgba(0,0,0,0) 70%);
+  z-index: 1;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1024px) {
+  .tech-stack-section {
+    padding: 5rem 0;
+  }
+  
+  .tech-stack-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-stack-section {
     padding: 4rem 0;
-    background-color: #fff;
   }
   
-  .tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+  .tech-stack-title {
+    font-size: 2rem;
   }
   
-  .tech-card {
-    background: #F7F7F2;
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease;
+  .tech-stack-card {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack-container {
+    padding: 0 1.5rem;
   }
   
-  .tech-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  .tech-stack-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
   
-  .tech-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2E86AB;
+  .tech-stack-grid {
+    grid-template-columns: 1fr;
   }
   
-  .tech-name {
-    color: #2D2D2A;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+  .tech-stack-icon-container {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1.25rem;
   }
-  
-  .tech-purpose {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  
-  @media (max-width: 768px) {
-    .technology-section {
-      padding: 2rem 0;
-    }
-  }
+}
