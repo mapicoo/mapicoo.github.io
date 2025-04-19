@@ -1,58 +1,249 @@
 .about-page {
-    padding-top: 80px;
+  --primary-color: #2E86AB;
+  --secondary-color: #F18F01;
+  --light-bg: #F7F7F2;
+  --dark-text: #333;
+  --light-text: #fff;
+  
+  padding-top: 80px;
+  color: var(--dark-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Project Overview Section */
+.project-overview {
+  padding: 5rem 0;
+  background-color: var(--light-bg);
+  position: relative;
+}
+
+.overview-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--secondary-color);
+  border-radius: 2px;
+}
+
+.overview-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.highlight-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.highlight-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+}
+
+.highlight-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Games Showcase */
+.games-showcase {
+  padding: 5rem 0;
+  background: white;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #666;
+}
+
+.game-card {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.game-visual {
+  flex: 1;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.balloon-game {
+  background-image: url('../../assets/images/balloon-game.jpg');
+  background-color: #8ECAE6;
+}
+
+.kitchen-game {
+  background-image: url('../../assets/images/kitchen-game.jpg');
+  background-color: #FFB347;
+}
+
+.plane-game {
+  background-image: url('../../assets/images/plane-game.jpg');
+  background-color: #06D6A0;
+}
+
+.game-info {
+  flex: 1;
+  padding: 3rem;
+}
+
+.game-info h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.game-info p {
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.game-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.game-highlights span {
+  background: var(--light-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Documentation CTA */
+.documentation-cta {
+  padding: 6rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-color), #1B5299);
+  color: white;
+}
+
+.documentation-cta .section-title {
+  color: white;
+}
+
+.documentation-cta .section-subtitle {
+  color: rgba(255,255,255,0.9);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 42px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(241, 143, 1, 0.4);
+}
+
+.cta-button:hover {
+  background-color: #e28400;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(241, 143, 1, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .game-card, .game-card.reverse {
+    flex-direction: column;
   }
   
-  .about-hero {
-    background: linear-gradient(135deg, #2E86AB 0%, #2E86AB 100%);
-    color: #fff;
-    padding: 4rem 0;
-    text-align: center;
+  .game-visual {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
   }
   
-  .about-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  .highlight-card {
+    min-width: 100%;
   }
   
-  .about-hero .subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
+  .game-info {
+    padding: 2rem;
   }
   
-  .documentation-preview {
-    padding: 4rem 0;
-    text-align: center;
-    background-color: #F7F7F2;
+  .game-highlights span {
+    font-size: 0.8rem;
   }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #F18F01;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 2rem;
-  }
-  
-  .cta-button:hover {
-    background-color: #d97d00;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  @media (max-width: 768px) {
-    .about-hero {
-      padding: 3rem 0;
-    }
-    
-    .about-hero h1 {
-      font-size: 2rem;
-    }
-    
-    .documentation-preview {
-      padding: 3rem 0;
-    }
-  }
+}
