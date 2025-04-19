@@ -5,46 +5,98 @@ import { teamMembers } from '../../utils/data';
 import './TeamPage.css';
 
 const TeamPage: React.FC = () => {
+  // Takım üyelerini 3-3-1 düzenine göre grupla
+  const firstRow = teamMembers.slice(0, 3);
+  const secondRow = teamMembers.slice(3, 6);
+  const lastMember = teamMembers[6];
+
   return (
-    <div className="team-page">
+    <div className="explorer-team-container">
       <PageHero 
-        title="Proje Ekibimiz" 
-        subtitle="Dünya Kaşifi'ni hayata geçiren yetenekli ekip" 
+        title="Keşif Ekibimiz" 
+        subtitle="Dünyayı birlikte keşfediyoruz" 
         background="team"
       />
       
-      <section className="team-section">
-        <div className="container">
-          <div className="team-grid">
-            {teamMembers.map((member) => (
+      {/* Takım Üyeleri Bölümü */}
+      <section className="explorer-team-members-section">
+        <div className="explorer-team-content">
+          <div className="explorer-team-header">
+            <h2 className="explorer-team-title">Ekibimiz</h2>
+            <p className="explorer-team-description">Haritaları şekillendiren, teknolojiyi ileri taşıyan ekip</p>
+            <div className="explorer-team-divider"></div>
+          </div>
+          
+          <div className="explorer-team-grid-wrapper">
+            {/* İlk Satır (3 Kart) */}
+            <div className="explorer-team-row">
+              {firstRow.map((member) => (
+                <TeamMemberCard
+                  key={member.id}
+                  name={member.name}
+                  role={member.role}
+                  responsibilities={member.responsibilities}
+                  image={member.image}
+                  socialLinks={member.socialLinks}
+                />
+              ))}
+            </div>
+
+            {/* İkinci Satır (3 Kart) */}
+            <div className="explorer-team-row">
+              {secondRow.map((member) => (
+                <TeamMemberCard
+                  key={member.id}
+                  name={member.name}
+                  role={member.role}
+                  responsibilities={member.responsibilities}
+                  image={member.image}
+                  socialLinks={member.socialLinks}
+                />
+              ))}
+            </div>
+
+            {/* Son Üye (Tek Kart) */}
+            <div className="explorer-team-single-card">
               <TeamMemberCard
-                key={member.id}
-                name={member.name}
-                role={member.role}
-                responsibilities={member.responsibilities}
-                image={member.image}
-                socialLinks={member.socialLinks}
+                key={lastMember.id}
+                name={lastMember.name}
+                role={lastMember.role}
+                responsibilities={lastMember.responsibilities}
+                image={lastMember.image}
+                socialLinks={lastMember.socialLinks}
               />
-            ))}
+            </div>
           </div>
         </div>
       </section>
       
-      <section className="team-values">
-        <div className="container">
-          <h2 className="section-title">Ekip Değerlerimiz</h2>
-          <div className="values-grid">
-            <div className="value-card">
+      {/* Çalışma Prensipleri Bölümü */}
+      <section className="explorer-team-principles">
+        <div className="explorer-team-content">
+          <div className="explorer-team-header">
+            <h2 className="explorer-team-title">Çalışma Prensiplerimiz</h2>
+            <p className="explorer-team-description">İşimizi şekillendiren temel değerler</p>
+            <div className="explorer-team-divider"></div>
+          </div>
+          
+          <div className="explorer-principles-grid">
+            <div className="explorer-principle-card explorer-principle-card--innovation">
+              <div className="principle-icon">💡</div>
               <h3>Yenilikçilik</h3>
-              <p>Sürekli olarak yeni fikirler ve çözümler üretiyoruz</p>
+              <p>Sınırları zorlayan çözümler üretmek için sürekli araştırıyoruz</p>
             </div>
-            <div className="value-card">
+            
+            <div className="explorer-principle-card explorer-principle-card--collaboration">
+              <div className="principle-icon">🤝</div>
               <h3>İşbirliği</h3>
-              <p>Güçlü ekip çalışması ile daha iyi sonuçlar elde ediyoruz</p>
+              <p>Farklı disiplinlerin gücünü birleştiriyoruz</p>
             </div>
-            <div className="value-card">
-              <h3>Kalite</h3>
-              <p>En yüksek standartlarda ürünler geliştiriyoruz</p>
+            
+            <div className="explorer-principle-card explorer-principle-card--impact">
+              <div className="principle-icon">🌍</div>
+              <h3>Etki</h3>
+              <p>Yaptığımız her şeyin gerçek dünyada etkisi olmasına odaklanıyoruz</p>
             </div>
           </div>
         </div>

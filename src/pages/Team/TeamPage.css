@@ -1,61 +1,166 @@
-.team-page {
-    padding-top: 0;
+/* TeamPage.css */
+.explorer-team-container {
+  --explorer-primary: #3a86ff;
+  --explorer-secondary: #8338ec;
+  --explorer-accent: #ff006e;
+  --explorer-light: #ffffff;
+  --explorer-dark: #212529;
+  --explorer-text-light: #6c757d;
+  --explorer-border: #e9ecef;
+}
+
+/* Takım Üyeleri Bölümü */
+.explorer-team-members-section {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+.explorer-team-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.explorer-team-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.explorer-team-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--explorer-dark);
+  margin-bottom: 1rem;
+}
+
+.explorer-team-description {
+  font-size: 1.1rem;
+  color: var(--explorer-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.explorer-team-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--explorer-primary), var(--explorer-secondary));
+  margin: 1.5rem auto;
+  border-radius: 2px;
+}
+
+.explorer-team-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.explorer-team-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.explorer-team-single-card {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Çalışma Prensipleri Bölümü */
+.explorer-team-principles {
+  padding: 6rem 0;
+  background-color: var(--explorer-light);
+}
+
+.explorer-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.explorer-principle-card {
+  background: var(--explorer-light);
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--explorer-border);
+}
+
+.explorer-principle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.principle-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.explorer-principle-card h3 {
+  font-size: 1.3rem;
+  color: var(--explorer-dark);
+  margin-bottom: 1rem;
+}
+
+.explorer-principle-card p {
+  color: var(--explorer-text-light);
+  line-height: 1.6;
+}
+
+/* Kart Renkleri */
+.explorer-principle-card--innovation {
+  border-top: 4px solid var(--explorer-primary);
+}
+
+.explorer-principle-card--collaboration {
+  border-top: 4px solid var(--explorer-secondary);
+}
+
+.explorer-principle-card--impact {
+  border-top: 4px solid var(--explorer-accent);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1024px) {
+  .explorer-team-title {
+    font-size: 2.2rem;
   }
-  
-  .team-section {
+}
+
+@media (max-width: 768px) {
+  .explorer-team-members-section,
+  .explorer-team-principles {
     padding: 4rem 0;
   }
   
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+  .explorer-team-title {
+    font-size: 2rem;
   }
   
-  .team-values {
-    padding: 4rem 0;
-    background-color: #F7F7F2;
+  .explorer-team-row {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .explorer-team-content {
+    padding: 0 1.5rem;
   }
   
-  .values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+  .explorer-team-title {
+    font-size: 1.8rem;
   }
   
-  .value-card {
-    background: #fff;
-    border-radius: 8px;
+  .explorer-principle-card {
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
   }
-  
-  .value-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .value-card h3 {
-    color: #2E86AB;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-  }
-  
-  .value-card p {
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  @media (max-width: 768px) {
-    .team-section,
-    .team-values {
-      padding: 2rem 0;
-    }
-    
-    .team-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+}
