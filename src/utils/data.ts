@@ -42,7 +42,7 @@ export const teamMembers = [
       "Test Senaryoları Diyagramı",
       "Güvenlik Mimarisi Diyagramı"
     ],
-    image: "/assets/images/team/member1.jpg",
+    image: "/assets/images/team/efe.jpeg",
     socialLinks: [
       { platform: "LinkedIn", url: "#", icon: "🔗" },
       { platform: "GitHub", url: "#", icon: "💻" }
@@ -58,7 +58,11 @@ export const teamMembers = [
       "Hukuki ve Yasal Gereksinimler",
       "Sürüm ve Dağıtım Stratejisi"
     ],
-    image: "/assets/images/team/member2.jpg"
+    image: "/assets/images/team/ibrahim.jpg",
+    socialLinks: [
+      { platform: "LinkedIn", url: "#", icon: "🔗" },
+      { platform: "GitHub", url: "#", icon: "💻" }
+    ]
   },
   {
     id: 3,
@@ -69,7 +73,11 @@ export const teamMembers = [
       "React tabanlı frontend uygulaması",
       "GitHub Pages entegrasyonu"
     ],
-    image: "/assets/images/team/member3.jpg"
+    image: "/assets/images/team/yasin.jpg",
+    socialLinks: [
+      { platform: "LinkedIn", url: "#", icon: "🔗" },
+      { platform: "GitHub", url: "#", icon: "💻" }
+    ]
   },
   {
     id: 4,
@@ -80,7 +88,11 @@ export const teamMembers = [
       "Kaynak yönetimi",
       "Ekip koordinasyonu"
     ],
-    image: "/assets/images/team/member4.jpg"
+    image: "/assets/images/team/ahmet.jpg",
+    socialLinks: [
+      { platform: "LinkedIn", url: "#", icon: "🔗" },
+      { platform: "GitHub", url: "#", icon: "💻" }
+    ]
   },
   {
     id: 5,
@@ -91,18 +103,26 @@ export const teamMembers = [
       "Proje dokümantasyonu",
       "İş gereksinimleri analizi"
     ],
-    image: "/assets/images/team/member5.jpg"
+    image: "/assets/images/team/emir.jpg",
+    socialLinks: [
+      { platform: "LinkedIn", url: "#", icon: "🔗" },
+      { platform: "GitHub", url: "#", icon: "💻" }
+    ]
   },
   {
     id: 6,
-    name: "Muhammed(t) Aşık",
+    name: "Muhammet İkbal Aşık",
     role: "Dokümantasyon Uzmanı",
     responsibilities: [
       "Risk yönetimi raporları",
       "Proje bütçe planı",
       "Pazarlama stratejileri"
     ],
-    image: "/assets/images/team/member6.jpg"
+    image: "/assets/images/team/ikbal.jpg",
+    socialLinks: [
+      { platform: "LinkedIn", url: "#", icon: "🔗" },
+      { platform: "GitHub", url: "#", icon: "💻" }
+    ]
   },
   {
     id: 7,
@@ -113,7 +133,11 @@ export const teamMembers = [
       "Veri akış diyagramları",
       "Sistem mimarisi diyagramları"
     ],
-    image: "/assets/images/team/member7.jpg"
+    image: "/assets/images/team/mehmet.jpeg",
+    socialLinks: [
+      { platform: "LinkedIn", url: "#", icon: "🔗" },
+      { platform: "GitHub", url: "#", icon: "💻" }
+    ]
   }
 ];
 
