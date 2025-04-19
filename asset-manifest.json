@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.84cbd48b.css",
+    "main.js": "/static/js/main.d8e9984f.js",
+    "static/media/balloon-game.jpg": "/static/media/balloon-game.f29dfb31cb43a4dcdb14.jpg",
+    "static/media/hero-bg.png": "/static/media/hero-bg.fb0998557cd44b5e0f66.png",
+    "static/media/kitchen-game.jpg": "/static/media/kitchen-game.3a6fa9c2d8c00a7598d1.jpg",
+    "static/media/plane-game.jpg": "/static/media/plane-game.3f593b7665482759cf5e.jpg",
+    "index.html": "/index.html",
+    "main.84cbd48b.css.map": "/static/css/main.84cbd48b.css.map",
+    "main.d8e9984f.js.map": "/static/js/main.d8e9984f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84cbd48b.css",
+    "static/js/main.d8e9984f.js"
+  ]
+}
