@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="home-page">
       <HeroSection 
-        title="Dünya Kaşifi Mobil Uygulaması"
+        title="Mapico Mobil Uygulaması"
         subtitle="Dünyayı keşfetmek artık daha kolay ve eğlenceli"
         ctaText="Projeyi İncele"
         ctaLink="/about"
@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
       <section className="features-section">
         <div className="container">
           <h2 className="section-title">Proje Özellikleri</h2>
-          <p className="section-subtitle">Dünya Kaşifi ile sunulan temel özellikler</p>
+          <p className="section-subtitle">Mapico ile sunulan temel özellikler</p>
           
           <div className="features-grid">
             {features.map((feature, index) => (

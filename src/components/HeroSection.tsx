@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroBg from '../../assets/images/hero-bg.jpg';
 import './HeroSection.css';
 
 interface HeroSectionProps {

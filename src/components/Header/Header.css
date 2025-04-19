@@ -28,10 +28,11 @@
 }
 
 .header.home-header {
-  background-color: transparent;
-  box-shadow: none;
+  background-color: #ffffff;
+  box-shadow: var(--header-shadow);
   backdrop-filter: none;
 }
+
 
 .header.home-header.scrolled {
   background-color: var(--header-scrolled-bg);
@@ -110,14 +111,14 @@
   position: relative;
 }
 
-.header.home-header .nav-link {
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.header.home-header.scrolled .nav-link {
+.nav-link {
   color: #2D2D2A;
-  text-shadow: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
 }
 
 .nav-link:hover {
