@@ -1,67 +1,165 @@
+/* PageHero.css */
+:root {
+  --primary-color: #4361ee;
+  --primary-dark: #3a0ca3;
+  --secondary-color: #4cc9f0;
+  --text-light: rgba(255, 255, 255, 0.9);
+}
+
 .page-hero {
-    position: relative;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding-top: 80px;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+.hero-default {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+.hero-team {
+  background: linear-gradient(135deg, #7209b7, #560bad);
+}
+
+.hero-documentation {
+  background: linear-gradient(135deg, #4895ef, #3f37c9);
+}
+
+.hero-contact {
+  background: linear-gradient(135deg, #4cc9f0, #4361ee);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 2rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-text {
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  color: var(--primary-color);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cta-arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.hero-cta:hover .cta-arrow {
+  transform: translateX(3px);
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  color: white;
+  z-index: 1;
+}
+
+.hero-wave svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .hero-default {
-    background: linear-gradient(135deg, #2E86AB 0%, #1a5a7a 100%);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .hero-team {
-    background: linear-gradient(135deg, #4a6fa5 0%, #166088 100%);
-  }
-  
-  .hero-documentation {
-    background: linear-gradient(135deg, #3a7ca5 0%, #164e70 100%);
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    height: 350px;
+    padding-top: 70px;
   }
   
   .hero-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2.2rem;
   }
   
   .hero-subtitle {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    opacity: 0.9;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 1.1rem;
   }
   
-  @media (max-width: 768px) {
-    .page-hero {
-      height: 250px;
-      padding-top: 70px;
-    }
-    
-    .hero-title {
-      font-size: 2rem;
-    }
-    
-    .hero-subtitle {
-      font-size: 1rem;
-    }
+  .hero-cta {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
   }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    height: 300px;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
