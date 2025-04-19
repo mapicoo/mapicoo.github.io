@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './ContactPage.css';
 import PageHero from '../../components/PageHero';
 import { FiSend, FiMapPin, FiMail, FiPhone } from 'react-icons/fi';
 import { motion, useAnimation } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 import { useInView } from 'react-intersection-observer';
 
 const ContactPage: React.FC = () => {
@@ -11,6 +12,9 @@ const ContactPage: React.FC = () => {
     email: '',
     message: ''
   });
+  const [isSending, setIsSending] = useState(false);
+  const [sendStatus, setSendStatus] = useState<{success: boolean; message: string} | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   // Animasyon kontrolleri
   const controls = useAnimation();
@@ -30,11 +34,42 @@ const ContactPage: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form gönderme işlemleri
-    alert('Mesajınız gönderildi!');
-    setFormData({ name: '', email: '', message: '' });
+    
+    if (!formRef.current || isSending) return;
+    
+    setIsSending(true);
+    setSendStatus(null);
+
+    try {
+      const result = await emailjs.sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+        formRef.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
+      );
+
+      if (result.status === 200) {
+        setSendStatus({ success: true, message: 'Mesajınız başarıyla gönderildi!' });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Gönderim başarısız oldu');
+      }
+    } catch (error) {
+      console.error('Gönderim hatası:', error);
+      setSendStatus({ 
+        success: false, 
+        message: 'Mesaj gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.' 
+      });
+    } finally {
+      setIsSending(false);
+      
+      // 5 saniye sonra durum mesajını temizle
+      setTimeout(() => {
+        setSendStatus(null);
+      }, 5000);
+    }
   };
 
   // Animasyon varyantları
@@ -162,7 +197,19 @@ const ContactPage: React.FC = () => {
                 <span className="neon-title-highlight">Mesaj</span> Gönderin
               </motion.h2>
               
+              {sendStatus && (
+                <motion.div 
+                  className={`neon-alert ${sendStatus.success ? 'success' : 'error'}`}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                >
+                  {sendStatus.message}
+                </motion.div>
+              )}
+              
               <motion.form 
+                ref={formRef}
                 onSubmit={handleSubmit} 
                 className="neon-form"
                 initial="hidden"
@@ -227,10 +274,17 @@ const ContactPage: React.FC = () => {
                   whileTap={{ scale: 0.98 }}
                   variants={formItemVariants}
                   custom={3}
+                  disabled={isSending}
                 >
-                  <FiSend className="submit-icon" />
-                  Gönder
-                  <span className="neon-btn-effect"></span>
+                  {isSending ? (
+                    'Gönderiliyor...'
+                  ) : (
+                    <>
+                      <FiSend className="submit-icon" />
+                      Gönder
+                      <span className="neon-btn-effect"></span>
+                    </>
+                  )}
                 </motion.button>
               </motion.form>
             </motion.div>
