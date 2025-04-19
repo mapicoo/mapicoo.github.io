@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           <ul>
             <li>
               <FaEnvelope className="contact-icon" />
-              <a href="mailto:info@dunyakisifi.com">info@dunyakisifi.com</a>
+              <a href="mailto:mapicosoftware@gmail.com">mapicosoftware@gmail.com</a>
             </li>
             <li>
               <FaPhone className="contact-icon" />
