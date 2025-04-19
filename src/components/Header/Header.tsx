@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''} ${isHomePage ? 'home-header' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo-link">
-          <img src="/assets/images/logo.png" alt="Dünya Kaşifi Logo" className="logo" />
+          <img src="/assets/logo.png" alt="Dünya Kaşifi Logo" className="logo" />
           <h1 className="site-title">Dünya Kaşifi</h1>
         </Link>
         <nav className="navbar">
