@@ -7,9 +7,11 @@
   --explorer-dark: #212529;
   --explorer-text-light: #6c757d;
   --explorer-border: #e9ecef;
+  --explorer-documentation: #4CC9F0;
+  --explorer-analysis: #7209B7;
+  --explorer-diagrams: #F72585;
 }
 
-/* Takım Üyeleri Bölümü */
 .explorer-team-members-section {
   padding: 6rem 0;
   background-color: #f8f9fa;
@@ -69,7 +71,6 @@
   width: 100%;
 }
 
-/* Çalışma Prensipleri Bölümü */
 .explorer-team-principles {
   padding: 6rem 0;
   background-color: var(--explorer-light);
@@ -98,33 +99,59 @@
 }
 
 .principle-icon {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1.5rem;
   display: inline-block;
 }
 
 .explorer-principle-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--explorer-dark);
   margin-bottom: 1rem;
 }
 
 .explorer-principle-card p {
   color: var(--explorer-text-light);
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 /* Kart Renkleri */
-.explorer-principle-card--innovation {
-  border-top: 4px solid var(--explorer-primary);
+.explorer-principle-card--documentation {
+  border-top: 4px solid var(--explorer-documentation);
 }
 
-.explorer-principle-card--collaboration {
-  border-top: 4px solid var(--explorer-secondary);
+.explorer-principle-card--analysis {
+  border-top: 4px solid var(--explorer-analysis);
 }
 
-.explorer-principle-card--impact {
-  border-top: 4px solid var(--explorer-accent);
+.explorer-principle-card--diagrams {
+  border-top: 4px solid var(--explorer-diagrams);
+}
+
+/* Özel Stiller */
+.technical-focus {
+  margin-top: 1rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.expertise-tag {
+  display: inline-block;
+  background-color: #e9ecef;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.task-list {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.task-list li {
+  margin-bottom: 0.5rem;
 }
 
 /* Responsive Tasarım */
