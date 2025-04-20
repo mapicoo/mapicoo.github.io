@@ -1,0 +1,181 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  
+  .not-found-content {
+    text-align: center;
+    max-width: 600px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .error-icon-container {
+    position: relative;
+    margin: 0 auto 1.5rem;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .error-icon {
+    font-size: 3.5rem;
+    color: #ff4d4f;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .pulse-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff4d4f;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: pulse 2s infinite;
+    z-index: 1;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.2;
+    }
+    70% {
+      transform: scale(1.3);
+      opacity: 0.05;
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0.2;
+    }
+  }
+  
+  .error-code {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin: 0.5rem 0;
+    line-height: 1;
+  }
+  
+  .error-title {
+    font-size: 1.75rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .error-description {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .primary-button, .secondary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .primary-button {
+    background-color: #1890ff;
+    color: white;
+  }
+  
+  .primary-button:hover {
+    background-color: #40a9ff;
+  }
+  
+  .secondary-button {
+    background-color: white;
+    color: #1890ff;
+    border: 1px solid #1890ff;
+  }
+  
+  .secondary-button:hover {
+    background-color: #e6f7ff;
+  }
+  
+  .button-icon {
+    margin-right: 8px;
+  }
+  
+  .help-section {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  .help-link {
+    color: #1890ff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 6px;
+  }
+  
+  .help-link:hover {
+    text-decoration: underline;
+  }
+  
+  .background-elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .circle-decoration {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(24, 144, 255, 0.1) 0%, rgba(24, 144, 255, 0.05) 100%);
+  }
+  
+  .circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+  }
+  
+  .circle-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    right: -50px;
+  }
+  
+  .square-decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, rgba(255, 77, 79, 0.1) 0%, rgba(255, 77, 79, 0.05) 100%);
+    transform: rotate(45deg);
+    top: 50%;
+    right: 10%;
+  }
