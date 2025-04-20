@@ -14,7 +14,7 @@ const TeamPage: React.FC = () => {
     <div className="explorer-team-container">
       <PageHero 
         title="Keşif Ekibimiz" 
-        subtitle="Dünyayı birlikte keşfediyoruz" 
+        subtitle="Dünyayı Birlikte Keşfediyoruz..." 
         background="team"
       />
       

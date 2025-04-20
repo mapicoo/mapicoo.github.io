@@ -115,7 +115,7 @@ const ContactPage: React.FC = () => {
                 </div>
                 <div>
                   <h3>Adres</h3>
-                  <p>Teknoloji Vadisi, İnovasyon Caddesi No:42, İstanbul</p>
+                  <p>Fırat Üniversitesi Teknoloji Fakültesi</p>
                 </div>
               </motion.div>
               
@@ -129,7 +129,7 @@ const ContactPage: React.FC = () => {
                 </div>
                 <div>
                   <h3>Email</h3>
-                  <p>iletisim@dunyakisifi.com</p>
+                  <p>mapicosoftware@gmail.com</p>
                 </div>
               </motion.div>
               
