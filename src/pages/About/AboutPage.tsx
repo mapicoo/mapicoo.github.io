@@ -1,15 +1,16 @@
-import React from 'react';
-import PageHero from '../../components/PageHero';
-import Features from './Features';
-import TechnologyStack from './TechnologyStack';
-import './AboutPage.css';
+import React from "react";
+import PageHero from "../../components/PageHero";
+import Features from "./Features";
+import TechnologyStack from "./TechnologyStack";
+import "./AboutPage.css";
+import { Link } from "react-router-dom";
 
 const AboutPage: React.FC = () => {
   return (
     <div className="team-page">
-      <PageHero 
-        title="Proje Hakkında" 
-        subtitle="Kültürleri AR ile Keşfetme Deneyimi" 
+      <PageHero
+        title="Proje Hakkında"
+        subtitle="Kültürleri AR ile Keşfetme Deneyimi"
         background="team"
       />
 
@@ -19,9 +20,10 @@ const AboutPage: React.FC = () => {
           <div className="overview-content">
             <h2 className="section-title">Mapico</h2>
             <p className="overview-text">
-              Mapico, artırılmış gerçeklik teknolojisiyle kullanıcılarına yerel kültürleri ve gelenekleri 
-              etkileşimli bir şekilde keşfetme fırsatı sunan yenilikçi bir mobil uygulamadır. 
-              Gerçek dünya ortamlarında AR destekli oyunlarla kültürel öğeleri dijital ortamda keşfedin.
+              Mapico, artırılmış gerçeklik teknolojisiyle kullanıcılarına yerel
+              kültürleri ve gelenekleri etkileşimli bir şekilde keşfetme fırsatı
+              sunan yenilikçi bir mobil uygulamadır. Gerçek dünya ortamlarında
+              AR destekli oyunlarla kültürel öğeleri dijital ortamda keşfedin.
             </p>
             <div className="highlight-cards">
               <div className="highlight-card">
@@ -48,15 +50,18 @@ const AboutPage: React.FC = () => {
       <section className="games-showcase">
         <div className="container">
           <h2 className="section-title">Oyun Deneyimlerimiz</h2>
-          <p className="section-subtitle">Kültürleri keşfederken eğlenmenizi sağlayan benzersiz AR oyunları</p>
-          
+          <p className="section-subtitle">
+            Kültürleri keşfederken eğlenmenizi sağlayan benzersiz AR oyunları
+          </p>
+
           <div className="game-card">
             <div className="game-visual balloon-game"></div>
             <div className="game-info">
               <h3>Balon Patlatma Oyunu</h3>
               <p>
-                AR ile balonları patlatırken yerel festivallerin sembollerini ve müziklerini keşfedin. 
-                Her patlatılan balon yöresel görseller ve melodiler sunar.
+                AR ile balonları patlatırken yerel festivallerin sembollerini ve
+                müziklerini keşfedin. Her patlatılan balon yöresel görseller ve
+                melodiler sunar.
               </p>
               <div className="game-highlights">
                 <span>🎈 Eğlenceli balon patlatma</span>
@@ -71,8 +76,9 @@ const AboutPage: React.FC = () => {
             <div className="game-info">
               <h3>AR Sanal Mutfak</h3>
               <p>
-                Gerçek masa üzerinde sanal mutfak deneyimi. Yöresel yemekleri AR ile hazırlayın, 
-                malzemeleri sürükleyip bırakın ve sanal şefin yönlendirmeleriyle öğrenin.
+                Gerçek masa üzerinde sanal mutfak deneyimi. Yöresel yemekleri AR
+                ile hazırlayın, malzemeleri sürükleyip bırakın ve sanal şefin
+                yönlendirmeleriyle öğrenin.
               </p>
               <div className="game-highlights">
                 <span>👨‍🍳 Adım adım rehber</span>
@@ -87,8 +93,9 @@ const AboutPage: React.FC = () => {
             <div className="game-info">
               <h3>Uçakta Keşif</h3>
               <p>
-                Uçakta karakterinizi yönlendirirken yerel yiyecekleri ve sembolleri toplayın. 
-                Her nesne yöresel bir yemek veya kültürel sembol olarak karşınıza çıkar.
+                Uçakta karakterinizi yönlendirirken yerel yiyecekleri ve
+                sembolleri toplayın. Her nesne yöresel bir yemek veya kültürel
+                sembol olarak karşınıza çıkar.
               </p>
               <div className="game-highlights">
                 <span>✈️ Eğlenceli gezinti</span>
@@ -102,16 +109,17 @@ const AboutPage: React.FC = () => {
 
       <Features />
       <TechnologyStack />
-      
+
       <section className="documentation-cta">
         <div className="container">
           <h2 className="section-title">Daha Fazlasını Keşfedin</h2>
           <p className="section-subtitle">
-            Mapico'nun teknik detaylarını ve kullanım kılavuzlarını dokümantasyonumuzda inceleyin
+            Mapico'nun teknik detaylarını ve kullanım kılavuzlarını
+            dokümantasyonumuzda inceleyin
           </p>
-          <a href="/documentation" className="cta-button">
+          <Link to="/documentation" className="cta-button">
             Dokümantasyona Göz At
-          </a>
+          </Link>
         </div>
       </section>
     </div>
