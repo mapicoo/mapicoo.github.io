@@ -27,9 +27,9 @@ const DocumentationPage: React.FC = () => {
               <DocumentCard
                 key={doc.id}
                 title={doc.title}
-                description={doc.description}
                 icon={doc.icon}
                 link={doc.link}
+                files={doc.files}
               />
             ))}
           </div>
