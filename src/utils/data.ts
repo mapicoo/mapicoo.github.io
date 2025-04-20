@@ -43,7 +43,7 @@ export const teamMembers = [
       "Veritabanı İlişki Diyagramı",
       "Modüler Tasarım Diyagramı",
       "Test Senaryoları Diyagramı",
-      "Güvenlik Mimarisi Diyagramı",
+      "Web Sitesi Geliştirici",
     ],
     image: "/assets/images/team/efe.jpeg",
     socialLinks: [
@@ -78,10 +78,9 @@ export const teamMembers = [
   {
     id: 3,
     name: "Yasin Tunç",
-    role: "Web Geliştirici",
+    role: "Proje Tanıtımcı",
     responsibilities: [
-      "Proje tanıtım sitesi geliştirme",
-      "React tabanlı frontend uygulaması",
+      "Proje Tanıtım Videosu",
       "GitHub Pages entegrasyonu",
     ],
     image: "/assets/images/team/yasin.jpg",
@@ -97,11 +96,11 @@ export const teamMembers = [
   {
     id: 4,
     name: "Ahmet Yeşeriroğlu",
-    role: "Proje Yöneticisi",
+    role: "Web Geliştirici",
     responsibilities: [
-      "Proje planlaması ve takibi",
+      "Web Geliştirici",
       "Kaynak yönetimi",
-      "Ekip koordinasyonu",
+      "GitHub Pages Entegrasyonu",
     ],
     image: "/assets/images/team/ahmet.jpg",
     socialLinks: [
@@ -122,9 +121,9 @@ export const teamMembers = [
     name: "Emircan Bacanak",
     role: "Risk Analisti",
     responsibilities: [
-      "Risk analizleri",
-      "Proje dokümantasyonu",
-      "İş gereksinimleri analizi",
+      "Risk Analizleri",
+      "Proje Dokümantasyonu",
+      "İş Gereksinimleri Analizi",
     ],
     image: "/assets/images/team/emir.jpg",
     socialLinks: [
@@ -142,12 +141,12 @@ export const teamMembers = [
   },
   {
     id: 6,
-    name: "Muhammet İkbal Aşık",
-    role: "Dokümantasyon Uzmanı",
+    name: "Muhammed İkbal Aşık",
+    role: "Mobil Geliştirici",
     responsibilities: [
-      "Risk yönetimi raporları",
-      "Proje bütçe planı",
-      "Pazarlama stratejileri",
+      "Risk Yönetimi Raporları",
+      "Mobile Developer",
+      "Trello Düzenleme",
     ],
     image: "/assets/images/team/ikbal.jpg",
     socialLinks: [
@@ -168,9 +167,10 @@ export const teamMembers = [
     name: "Mehmet Başgöze",
     role: "Diyagram Uzmanı",
     responsibilities: [
-      "Kullanıcı akış diyagramları",
-      "Veri akış diyagramları",
-      "Sistem mimarisi diyagramları",
+      "Kullanıcı Akış Diyagramları",
+      "Veri Akış Diyagramları",
+      "Sistem Mimarisi Diyagramları",
+      "Mobile Developer"
     ],
     image: "/assets/images/team/mehmet.jpeg",
     socialLinks: [
