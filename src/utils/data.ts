@@ -187,44 +187,92 @@ export const teamMembers = [
 export const documents = [
   {
     id: 1,
-    title: "Proje Tanımlama ve Amaç Raporu",
-    description: "Proje kapsamı, hedefleri ve başlangıç gereksinimleri",
+    title: "Proje Analizi ve Stratejik Planlama Raporu",
     icon: "📄",
-    link: "#",
+    link: "/documents/proje-analizi-ve-stratejik-planlama-raporu.docx",
+    files: [
+      {
+        name: "Proje Analizi ve Stratejik Planlama Raporu.docx",
+        type: "docx"
+      }
+    ]
   },
   {
     id: 2,
-    title: "İş Gereksinim Belgesi",
-    description: "İş hedefleri ve gereksinimlerinin tanımı",
+    title: "Çevresel ve Rekabet Analizi Raporu",
     icon: "📊",
-    link: "#",
+    link: "/documents/cevresel-ve-rekabet-analizi-raporu.docx",
+    files: [
+      {
+        name: "Çevresel ve Rekabet Analizi Raporu.docx",
+        type: "docx"
+      }
+    ]
   },
   {
     id: 3,
-    title: "Fonksiyonel Gereksinimler Belgesi",
-    description: "Yazılımın gerçekleştirmesi gereken işlevler",
+    title: "Proje Tanımı ve Gereksinim Belgeleri ",
     icon: "⚙️",
-    link: "#",
+    link: "/documents/proje-tanimi-ve-gereksinim-belgeleri-raporu.docx",
+    files: [
+      {
+        name: "Proje Tanımı ve Gereksinim Belgeleri Raporu.docx",
+        type: "docx"
+      }
+    ]
   },
   {
     id: 4,
-    title: "Teknik Gereksinimler Belgesi",
-    description: "Kullanılacak teknolojiler ve altyapı",
+    title: "Veri Akış ve Veritabanı İlişki Diyagramı",
     icon: "💻",
-    link: "#",
+    link: "/documents/veri-akis-diyagrami.pdf",
+    files: [
+      {
+        name: "Data Flow Chart.pdf",
+        type: "pdf",
+        description: "Veri Akış Diyagramı"
+      },
+      {
+        name: "ERD.pdf",
+        type: "pdf",
+        description: "Veritabanı İlişki Diyagramı"
+      }
+    ]
   },
   {
     id: 5,
-    title: "Sistem Tasarımı ve Mimari Raporu",
-    description: "Yazılımın genel mimarisi ve tasarımı",
+    title: "Sistem Mimarisi ve Use Case Diyagramı",
     icon: "🏗️",
-    link: "#",
+    link: "/documents/sistem-mimarisi-diyagrami.pdf",
+    files: [
+      {
+        name: "System Architecture Diagram.pdf",
+        type: "pdf",
+        description: "Sistem Mimarisi Diyagramı"
+      },
+      {
+        name: "Use Case.pdf",
+        type: "pdf",
+        description: "Use Case Diyagramı"
+      }
+    ]
   },
   {
     id: 6,
-    title: "Risk Yönetimi ve İzleme Raporu",
-    description: "Projenin olası riskleri ve yönetim stratejileri",
+    title: "Kullanıcı Akış ve Modüler Tasarım Diyagramı",
     icon: "⚠️",
-    link: "#",
+    link: "/documents/moduler-tasarim-diyagrami.png",
+    files: [
+      {
+        name: "User Flow Chart.jpg",
+        type: "png",
+        description: "Kullanıcı Akış Diyagramı"
+      },
+      {
+        name: "Modüler Yapı Diyagramı.png",
+        type: "png",
+        description: "Modüler Tasarım Diyagramı"
+      }
+    ]
   },
 ];
