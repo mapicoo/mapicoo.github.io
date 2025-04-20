@@ -223,7 +223,7 @@ export const documents = [
   },
   {
     id: 4,
-    title: "Veri Akış Diyagramı ve Veritabanı İlişki Diyagramı",
+    title: "Veri Akış ve Veritabanı İlişki Diyagramı",
     icon: "💻",
     link: "/documents/veri-akis-diyagrami.pdf",
     files: [
@@ -241,7 +241,7 @@ export const documents = [
   },
   {
     id: 5,
-    title: "Sistem Mimarisi Diyagramı ve Use Case Diyagramı",
+    title: "Sistem Mimarisi ve Use Case Diyagramı",
     icon: "🏗️",
     link: "/documents/sistem-mimarisi-diyagrami.pdf",
     files: [
