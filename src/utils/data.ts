@@ -38,12 +38,12 @@ export const teamMembers = [
   {
     id: 1,
     name: "Efe Eroğlu",
-    role: "Diyagram Uzmanı",
+    role: "Scrum Master",
     responsibilities: [
-      "Veritabanı İlişki Diyagramı",
-      "Modüler Tasarım Diyagramı",
-      "Test Senaryoları Diyagramı",
-      "Web Sitesi Geliştirici",
+      "Süreci Koordine Etmek",
+      "Takım İçi İletişim Sağlamak",
+      "CI/CD Süreç Yönetimi",
+      "Backend Endpointlerinin Geliştirilmesi",
     ],
     image: "/assets/images/team/efe.jpeg",
     socialLinks: [
@@ -58,12 +58,12 @@ export const teamMembers = [
   {
     id: 2,
     name: "İbrahim Bakar",
-    role: "Analiz ve Dokümantasyon",
+    role: "Analist ve AR Geliştirici",
     responsibilities: [
       "SWOT, PESTLE, Porter Analizleri",
       "VRIO ve Rekabet Analizleri",
-      "Hukuki ve Yasal Gereksinimler",
       "Sürüm ve Dağıtım Stratejisi",
+      "Keşif Araçları İçin 3D Modelleme",
     ],
     image: "/assets/images/team/ibrahim.jpg",
     socialLinks: [
@@ -78,10 +78,11 @@ export const teamMembers = [
   {
     id: 3,
     name: "Yasin Tunç",
-    role: "Proje Tanıtımcı",
+    role: "Test ve Tanıtım Sorumlusu",
     responsibilities: [
       "Proje Tanıtım Videosu",
-      "GitHub Pages entegrasyonu",
+      "Pazarlama İçeriği Hazırlanması",
+      "Performans ve Güvenlik Testleri",
     ],
     image: "/assets/images/team/yasin.jpg",
     socialLinks: [
@@ -96,11 +97,11 @@ export const teamMembers = [
   {
     id: 4,
     name: "Ahmet Yeşeriroğlu",
-    role: "Web Geliştirici",
+    role: "Frontend Developer",
     responsibilities: [
-      "Web Geliştirici",
-      "Kaynak yönetimi",
-      "GitHub Pages Entegrasyonu",
+      "Web Sitesi Önyüz Geliştirmesi",
+      "Mobil Uygulama UI/UX Tasarımı",
+      "AR Özellik Entegrasyonu",
     ],
     image: "/assets/images/team/ahmet.jpg",
     socialLinks: [
@@ -119,11 +120,11 @@ export const teamMembers = [
   {
     id: 5,
     name: "Emircan Bacanak",
-    role: "Risk Analisti",
+    role: "Mobile Developer & Tester",
     responsibilities: [
-      "Risk Analizleri",
-      "Proje Dokümantasyonu",
-      "İş Gereksinimleri Analizi",
+      "Veri Senkronizasyonu",
+      "Hata Raporlama ve Takibi",
+      "Regresyon ve Performans Testleri",
     ],
     image: "/assets/images/team/emir.jpg",
     socialLinks: [
@@ -142,11 +143,11 @@ export const teamMembers = [
   {
     id: 6,
     name: "Muhammed İkbal Aşık",
-    role: "Mobil Geliştirici",
+    role: "Mobile Developer",
     responsibilities: [
-      "Risk Yönetimi Raporları",
-      "Mobile Developer",
-      "Trello Düzenleme",
+      "API Entegrasyonu",
+      "AR Özelliklerinin Entegrasyonu",
+      "ARKit veya ARCore entegrasyonu",
     ],
     image: "/assets/images/team/ikbal.jpg",
     socialLinks: [
@@ -165,12 +166,11 @@ export const teamMembers = [
   {
     id: 7,
     name: "Mehmet Başgöze",
-    role: "Diyagram Uzmanı",
+    role: "AR Developer",
     responsibilities: [
-      "Kullanıcı Akış Diyagramları",
-      "Veri Akış Diyagramları",
-      "Sistem Mimarisi Diyagramları",
-      "Mobile Developer"
+      "AR Öğrelerinin Tasarımı",
+      "AR Deneyim Optimizasyonu",
+      "AR Senaryolarının Geliştirilmesi",
     ],
     image: "/assets/images/team/mehmet.jpeg",
     socialLinks: [
@@ -193,9 +193,9 @@ export const documents = [
     files: [
       {
         name: "Proje Analizi ve Stratejik Planlama Raporu.docx",
-        type: "docx"
-      }
-    ]
+        type: "docx",
+      },
+    ],
   },
   {
     id: 2,
@@ -205,9 +205,9 @@ export const documents = [
     files: [
       {
         name: "Çevresel ve Rekabet Analizi Raporu.docx",
-        type: "docx"
-      }
-    ]
+        type: "docx",
+      },
+    ],
   },
   {
     id: 3,
@@ -217,9 +217,9 @@ export const documents = [
     files: [
       {
         name: "Proje Tanımı ve Gereksinim Belgeleri Raporu.docx",
-        type: "docx"
-      }
-    ]
+        type: "docx",
+      },
+    ],
   },
   {
     id: 4,
@@ -230,14 +230,14 @@ export const documents = [
       {
         name: "Data Flow Chart.pdf",
         type: "pdf",
-        description: "Veri Akış Diyagramı"
+        description: "Veri Akış Diyagramı",
       },
       {
         name: "ERD.pdf",
         type: "pdf",
-        description: "Veritabanı İlişki Diyagramı"
-      }
-    ]
+        description: "Veritabanı İlişki Diyagramı",
+      },
+    ],
   },
   {
     id: 5,
@@ -248,14 +248,14 @@ export const documents = [
       {
         name: "System Architecture Diagram.pdf",
         type: "pdf",
-        description: "Sistem Mimarisi Diyagramı"
+        description: "Sistem Mimarisi Diyagramı",
       },
       {
         name: "Use Case.pdf",
         type: "pdf",
-        description: "Use Case Diyagramı"
-      }
-    ]
+        description: "Use Case Diyagramı",
+      },
+    ],
   },
   {
     id: 6,
@@ -266,13 +266,13 @@ export const documents = [
       {
         name: "User Flow Chart.jpg",
         type: "png",
-        description: "Kullanıcı Akış Diyagramı"
+        description: "Kullanıcı Akış Diyagramı",
       },
       {
         name: "Modüler Yapı Diyagramı.png",
         type: "png",
-        description: "Modüler Tasarım Diyagramı"
-      }
-    ]
+        description: "Modüler Tasarım Diyagramı",
+      },
+    ],
   },
 ];
