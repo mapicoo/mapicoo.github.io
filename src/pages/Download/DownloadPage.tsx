@@ -7,7 +7,7 @@ import './DownloadPage.css';
 const DownloadPage = () => {
 const handleDownload = () => {
   const link = document.createElement('a');
-  link.href = '/app-release.apk'; // public klasöründe olduğu için kök URL üzerinden erişilir
+  link.href = '/app-release.apk.zip'; // public klasöründe olduğu için kök URL üzerinden erişilir
   link.download = 'Mapico.apk';   // İndirilen dosya adı
   document.body.appendChild(link);
   link.click();
