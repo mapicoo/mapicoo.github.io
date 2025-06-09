@@ -38,6 +38,17 @@ const Header: React.FC = () => {
             <li className="nav-item"><NavLink to="/team" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Ekip</NavLink></li>
             <li className="nav-item"><NavLink to="/documentation" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Dokümantasyon</NavLink></li>
             <li className="nav-item"><NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>İletişim</NavLink></li>
+            <li className="nav-item">
+              <NavLink
+              to="/download"
+              className={({ isActive }) =>
+              isActive ? "download-button active" : "download-button"
+                }
+              >
+              <FiDownload className="download-icon" />
+              İndir
+              </NavLink>
+            </li>
           </ul>
         </nav>
 
