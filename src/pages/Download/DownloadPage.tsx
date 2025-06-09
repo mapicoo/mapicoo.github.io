@@ -7,12 +7,13 @@ import './DownloadPage.css';
 const DownloadPage = () => {
 const handleDownload = () => {
   const link = document.createElement('a');
-  link.href = '/app-release.apk.zip'; // public klasöründe olduğu için kök URL üzerinden erişilir
-  link.download = 'Mapico.apk';   // İndirilen dosya adı
+  link.href = 'https://drive.google.com/uc?export=download&id=1e-yjsOd5lrb5UAb27bXU4H4Sqrb_B1FI';
+  link.download = 'Mapicoo.apk'; // İndirilen dosya adı
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 };
+
   return (
     <div className="download-page">
       {/* CTA Section */}
